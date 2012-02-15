@@ -1,7 +1,7 @@
 from distutils.core import setup
 
 setup(
-    name='Sheath',
+    name='bootstrap',
     version='0.0.1',
     packages=['bootstrap',],
     license='GPLv2',
