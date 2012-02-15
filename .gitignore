@@ -1,2 +1,6 @@
 build
 dist
+*.py[c,o]
+*.bak
+*.swp
+.DS_Store

@@ -11,5 +11,6 @@ This module contains the set of bootstrap's exceptions
 
 """
 
+
 class BoostrapException(Exception):
     """This is an ambiguous exception that occured."""

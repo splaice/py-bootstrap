@@ -25,8 +25,6 @@ __license__ = 'ISC'
 __copyright__ = 'Copyright 2012 Firstname Lastname'
 
 
-
 from . import utils
-from .models import Request, Response
-from .api import request, get, head, post, patch, put, delete, options
+from .models import World
 from .exceptions import BootstrapException

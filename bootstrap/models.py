@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 """
 bootstrap.models
 ~~~~~~~~
@@ -12,6 +11,7 @@ This module contains the primary objects that power Bootstrap.
 """
 
 from .exceptions import BoostrapException
+
 
 class World(object):
     """The :class:`World <World>` object. It carries out all functionality

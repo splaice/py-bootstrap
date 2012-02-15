@@ -13,19 +13,19 @@ that are also useful for external consumption.
 """
 
 
-def black()
+def black():
     """The world is black."""
 
     return [True, True, True, True]
 
 
-def white()
+def white():
     """The world is white."""
 
     return [False, False, False, False]
 
 
-def gray()
+def gray():
     """The world is gray."""
 
     return [False, True, False, True]
