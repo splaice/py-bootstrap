@@ -10,7 +10,7 @@ This module contains the primary objects that power Bootstrap.
 
 """
 
-from .exceptions import BoostrapException
+from .exceptions import BootstrapException
 
 
 class World(object):
@@ -18,15 +18,13 @@ class World(object):
     of World."""
 
     def __init__(self, state=None):
+        self.state = state
 
-        if state:
-            self.state = state
-
-    def get_state():
+    def get_state(self):
         """Get the state of the world"""
-        return state
+        return self.state
 
-    def set_state(state=None):
+    def set_state(self, state=None):
         """Set the state of the world"""
         if state:
             self.state = state
