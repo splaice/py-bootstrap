@@ -1,4 +1,4 @@
-.PHONY: all pep8 pyflakes
+.PHONY: all pep8 pyflakes clean
 
 GITIGNORES=$(shell cat .gitignore |tr "\\n" ",")
 
@@ -10,3 +10,6 @@ pep8: .gitignore
 #TODO: setup pyflakes to run @splaice
 pyflakes:
 	@pyflakes .
+
+clean:
+	@rm -rf build dist
