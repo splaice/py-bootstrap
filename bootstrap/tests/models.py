@@ -2,8 +2,17 @@ import unittest
 from bootstrap.models import World
 
 
-class TestWorld(unittest.TestCase):
+class WorldTestCase(unittest.TestCase):
+    def setUp(self):
+        self.world = World()
 
-    def test_default_world(self):
-        world = World()
-        print world.get_state()
+    def tearDown(self):
+        self.world = None
+
+
+    def test_default_state(self):
+        self.assertEqual(self.world.get_state(), None,
+                'incorrect default state')
+
+
+suite = unittest.TestLoader().loadTestsFromTestCase(WorldTestCase)
