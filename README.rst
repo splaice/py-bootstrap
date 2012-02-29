@@ -14,8 +14,9 @@ Features
 --------
 
 - Example package and module layout
-- Example unittest integration and layout
-- Example setup.py using distutils2
+- Example testing integration and layout using testify
+- Example `setup.py` using distutils
+- Example `Makefile` for quick development setup using virtualenv and pip
 
 
 Use
@@ -23,9 +24,17 @@ Use
 
 To create a new project derived from the boilerplate: ::
 
-    git clone https://github.com/splaice/py-bootstrap.git
-    cd py-bootstrap
-    git archive master | tar -x -C /path/to/package
+    ~/Projects $ git clone https://github.com/splaice/py-bootstrap.git
+    ~/Projects $ cd py-bootstrap
+    ~/Projects/py-bootstrap $ git archive master | tar -x -C ~/Projects/myproject
+
+Now you should have a reasonable working python project. You can set it up in development mode using the `Makefile`
+
+    ~/Projects/myproject $ make dev
+
+The tests should all work:
+
+    ~/Projects/myproject $ make test
 
 
 Contribute
