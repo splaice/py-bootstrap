@@ -4,7 +4,7 @@
 import os
 import sys
 import bootstrap
-from distutils2.core import setup, find_packages
+from distutils.core import setup
 
 # publish package
 #if sys.argv[-1] == 'publish':
@@ -22,10 +22,10 @@ setup(
     version=bootstrap.__version__,
     description='Python Package Bootstrap Project.',
     long_description=open('README.rst').read(),
-    author='Sean Plaice',
+    author='FirstName LastName',
     url='http://github.com/splaice/py-bootstrap',
     package_data={'': ['LICENSE', 'NOTICE']},
     license=bootstrap.__license__,
     #packages=find_packages()
-    packages=['bootstrap', 'bootstrap.tests']
+    packages=['bootstrap',]
 )

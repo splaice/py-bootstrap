@@ -18,19 +18,14 @@ Features
 - Example setup.py using distutils2
 
 
-Installation
----
-
-To install py-bootstrap: ::
-
-    $ pip install py-bootstrap
-
 Use
 ---
 
 To create a new project derived from the boilerplate: ::
 
-    py-bootstrap mypackage /path/to/package root
+    git clone https://github.com/splaice/py-bootstrap.git
+    cd py-bootstrap
+    git archive master | tar -x -C /path/to/package
 
 
 Contribute

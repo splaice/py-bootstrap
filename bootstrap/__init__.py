@@ -27,4 +27,4 @@ __copyright__ = 'Copyright 2012 Firstname Lastname'
 
 from . import utils
 from .models import World
-from .exceptions import BootstrapException
+from .errors import BootstrapError

@@ -1,16 +1,12 @@
 # -*- coding: utf-8 -*-
 """
-bootstrap.models
-~~~~~~~~
-
 This module contains the primary objects that power Bootstrap.
 
 :copyright: (c) 2012 by Firstname Lastname.
 :license: ISC, see LICENSE for more details.
-
 """
 
-from .exceptions import BootstrapException
+from .errors import BootstrapError
 
 
 class World(object):
@@ -29,4 +25,4 @@ class World(object):
         if state:
             self.state = state
         else:
-            raise BootstrapException()
+            raise BootstrapError()

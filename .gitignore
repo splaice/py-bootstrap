@@ -1,6 +1,8 @@
 build
 dist
+env
 *.py[c,o]
 *.bak
 *.swp
+*.egg-info
 .DS_Store
