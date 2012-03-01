@@ -12,4 +12,3 @@ This module contains the set of bootstrap's exceptions
 class BootstrapError(Exception):
     """This is an ambiguous error that occured."""
     pass
-

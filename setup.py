@@ -27,5 +27,5 @@ setup(
     package_data={'': ['LICENSE', 'NOTICE']},
     license=bootstrap.__license__,
     #packages=find_packages()
-    packages=['bootstrap',]
+    packages=['bootstrap']
 )
