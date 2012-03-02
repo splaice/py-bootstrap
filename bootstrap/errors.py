@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
 
 """
-bootstrap.exceptions
-~~~~~~~~
-
 This module contains the set of bootstrap's exceptions
 
 :copyright: (c) 2012 by Firstname Lastname.
@@ -12,5 +9,6 @@ This module contains the set of bootstrap's exceptions
 """
 
 
-class BootstrapException(Exception):
-    """This is an ambiguous exception that occured."""
+class BootstrapError(Exception):
+    """This is an ambiguous error that occured."""
+    pass
