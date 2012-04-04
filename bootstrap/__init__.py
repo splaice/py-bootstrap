@@ -19,6 +19,8 @@ bootstrap
 
 __title__ = 'bootstrap'
 __version__ = '0.0.1'
+__description__ = 'Python Package Bootstrap'
+__url__ = 'https://github.com/splaice/py-bootstrap'
 __build__ = 0
 __author__ = 'Firstname Lastname'
 __license__ = 'ISC'

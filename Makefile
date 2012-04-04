@@ -15,8 +15,8 @@ dev: env env/.pip
 env:
 	virtualenv --distribute env
 
-env/.pip: env requirements.txt
-	bin/virtual-env-exec pip install -r requirements.txt
+env/.pip: env cfg/requirements.txt
+	bin/virtual-env-exec pip install -r cfg/requirements.txt
 	bin/virtual-env-exec pip install -e .
 	touch env/.pip
 
