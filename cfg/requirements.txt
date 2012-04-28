@@ -1,3 +1,4 @@
 testify
 pep8
 pyflakes
+ipython

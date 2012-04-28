@@ -16,7 +16,7 @@ Features
 - Example package and module layout
 - Example testing integration and layout using testify
 - Example `setup.py` using distutils
-- Example `Makefile` for quick development setup using virtualenv and pip
+- Example `Makefile` for quick development setup using virtualenv, pip and ipython
 - Simple project creation using boilerplate via `bin/boostrap.sh`
 
 
@@ -36,7 +36,24 @@ Now you should have a reasonable working python project. You can set it up in de
 The tests should all work:
 
     ~/Projects/Project $ make test
+    .
+    PASSED.  1 test / 1 case: 1 passed, 0 failed.  (Total test time 0.00s)
 
+If you need to debug your application with ipython:
+
+    ~/Projects/Project $ make shell
+    Python 2.7.3 (default, Apr 27 2012, 21:31:10) 
+    Type "copyright", "credits" or "license" for more information.
+
+    IPython 0.12.1 -- An enhanced Interactive Python.
+    ?         -> Introduction and overview of IPython's features.
+    %quickref -> Quick reference.
+    help      -> Python's own help system.
+    object?   -> Details about 'object', use 'object??' for extra details.
+
+    In [1]: from project.models import Project
+
+    In [2]:
 
 Contribute
 ----------
