@@ -10,6 +10,9 @@ pep8: .gitignore env
 pyflakes: env
 	@bin/virtual-env-exec pyflakes bootstrap tests
 
+pylint: env
+	@bin/virtual-env-exec pylint bootstrap 2>&1 |less
+
 dev: env env/.pip
 
 env:
